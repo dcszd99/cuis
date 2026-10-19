@@ -4,14 +4,16 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
-// GitHub Pages 项目页部署在 https://<user>.github.io/cuis/ 下，
-// 构建产物需以 /cuis/ 作为资源基路径；本地开发仍以 / 为基路径。
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/cuis/' : '/',
+// 默认部署在根路径（Cloudflare Pages / 自定义域名等）。
+// 若部署到 GitHub Pages 项目页（子路径），构建时设置 VITE_BASE_PATH=/cuis/。
+const base = process.env.VITE_BASE_PATH || '/'
+
+export default defineConfig({
+  base,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-}))
+})

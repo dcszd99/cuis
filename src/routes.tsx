@@ -22,8 +22,7 @@ const AdminPostEdit = lazy(() => import('@/pages/admin/post-edit'))
 // oxlint-disable-next-line react/only-export-components -- React.lazy 绑定被误判为组件
 const AdminProjectEdit = lazy(() => import('@/pages/admin/project-edit'))
 
-// GitHub Pages 部署在 /cuis/ 子路径下，路由需设置匹配的 basename；
-// 本地开发 base 为 '/'。Vite 的 BASE_URL 在构建时为 '/cuis/'，开发时为 '/'。
+// 路由 basename 跟随 Vite 的 base（根路径部署为 '/'，GitHub Pages 子路径部署为 '/cuis'）。
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
 
 export const router = createBrowserRouter([
