@@ -1,0 +1,30 @@
+{
+  "name": "你的名字",
+  "title": "全栈工程师 · 热爱构建优雅的 Web 应用",
+  "bio": "这里是你的个人简介。用 2-3 句话介绍你的背景、专注方向与兴趣。",
+  "avatar": "/avatar.png",
+  "email": "me@example.com",
+  "location": "中国 · 上海",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/yourname", "icon": "github" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/yourname", "icon": "linkedin" }
+  ],
+  "timeline": [
+    {
+      "period": "2023 - 至今",
+      "title": "高级前端工程师",
+      "org": "某科技公司",
+      "description": "负责核心 Web 应用的架构与开发。"
+    },
+    {
+      "period": "2020 - 2023",
+      "title": "前端工程师",
+      "org": "某互联网公司"
+    }
+  ],
+  "stats": [
+    { "label": "工作经验", "value": "5 年" },
+    { "label": "项目数量", "value": "12" },
+    { "label": "开源贡献", "value": "30+" }
+  ]
+}

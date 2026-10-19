@@ -1,0 +1,8 @@
+[
+  { "name": "React", "icon": "atom", "category": "frontend", "level": 5 },
+  { "name": "TypeScript", "icon": "code", "category": "frontend", "level": 5 },
+  { "name": "Tailwind CSS", "icon": "wind", "category": "frontend", "level": 4 },
+  { "name": "Node.js", "icon": "server", "category": "backend", "level": 4 },
+  { "name": "PostgreSQL", "icon": "database", "category": "database", "level": 3 },
+  { "name": "Docker", "icon": "container", "category": "devops", "level": 3 }
+]

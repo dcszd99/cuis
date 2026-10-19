@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* 配色系统（来自 PRD 3.2） */
+  --color-background: #0a0e1a;
+  --color-surface: #131a2b;
+  --color-border: #2a3550;
+  --color-accent: #6366f1;
+  --color-accent-2: #22d3ee;
+  --color-text-primary: #e5e7eb;
+  --color-text-secondary: #94a3b8;
+
+  /* 字体（来自 PRD 3.3） */
+  --font-sans: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei',
+    'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
