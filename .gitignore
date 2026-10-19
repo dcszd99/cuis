@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cursor local config (MCP 等本地环境配置，不应提交)
+.cursor/
