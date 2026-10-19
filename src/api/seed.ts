@@ -66,7 +66,7 @@ export const seedPosts: BlogPost[] = [
 ]
 
 export const defaultSettings: SiteSettings = {
-  siteName: '我的名字',
+  siteName: '王瑾',
   siteDescription: '个人展示网站 —— 个人介绍、技能、项目与博客',
   author: '你的名字',
   email: 'me@example.com',
